@@ -32,8 +32,48 @@ body {
 }
 
 .goods__background {
-  background-image: url(assets/img/graystripe1.svg);
   position: absolute;
+  background: #F2F2F2;
+  opacity: 0.5;
+  border-radius: 116px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  z-index: -1;
+}
+
+.goods__stripe1 {
+  width: 232px;
+  height: 512px;
+  left: -261.12px;
+  top: 115.05px;
+}
+
+.goods__stripe2 {
+  width: 232px;
+  height: 911px;
+  left: 155.15px;
+  top: -84.42px;
+}
+
+.goods__stripe3 {
+  width: 232px;
+  height: 338px;
+  left: 535.42px;
+  top: 138.44px;
+}
+
+.goods__stripe4 {
+  width: 232px;
+  height: 923px;
+  left: 950.19px;
+  top: -153.03px;
+}
+
+.goods__stripe5 {
+  width: 232px;
+  height: 472px;
+  left: 1373.45px;
+  top: 86.54px;
 }
 
 .goods__icon {
