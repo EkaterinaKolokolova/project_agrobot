@@ -1,1 +1,112 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+@font-face {
+  font-family: 'SF Pro Display', sans-serif;
+  src: url(assets/font/SFPRODISPLAYREGULAR.OTF);
+}
+
+body {
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+.btn {
+  background: linear-gradient(94.77deg, #48B760 0%, #6BB748 100%);
+  border-radius: 500px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-style: none;
+  padding: 15px 35px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/* Товары и услуги */
+.goods {
+  margin: 50px;
+  position: relative;
+}
+
+.goods__background {
+  background-image: url(assets/img/graystripe1.svg);
+  position: absolute;
+}
+
+.goods__icon {
+  position: absolute;
+  display: inline-block;
+  background-image: url(assets/img/icon.svg);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  top: 80px;
+}
+
+.goods__title {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #4F4F4F;
+  font-size: 96px;
+  margin-bottom: 50px;
+  margin-left: 25px;
+}
+
+.goods__text {
+  font-weight: 50000;
+  color: #828282;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 45px;
+  letter-spacing: -0.3px;
+}
+
+.catalog {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 27px;
+}
+
+.product {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 315px;
+  text-align: center;
+}
+
+.product__wrapper {
+  padding: 40px 44px;
+}
+
+.product__icon {
+  margin-bottom: 40px;
+}
+
+.product__title {
+  font-weight: 700;
+  color: #828282;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+
+.product__description {
+  font-weight: 500;
+  color: #BDBDBD;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.arrow {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
