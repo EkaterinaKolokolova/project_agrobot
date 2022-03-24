@@ -152,7 +152,6 @@ body {
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 45px;
-  letter-spacing: -0.3px;
 }
 
 .catalog {
@@ -256,7 +255,7 @@ body {
 
 .site-map__title {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 18px;
   color: #fff;
   margin: 0;
 }
@@ -267,7 +266,7 @@ body {
 }
 
 .site-map__link {
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: none;
   color: #828282;
 }
@@ -294,7 +293,7 @@ body {
 
 .social__title {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 18px;
   color: #fff;
   margin: 0;
 }
@@ -332,7 +331,7 @@ body {
   -ms-grid-column-span: 1;
   grid-area: 2/1/2/2;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 18px;
   margin-top: 30px;
   margin-bottom: 0;
