@@ -4,6 +4,10 @@
 body
     font-family: 'SF Pro Display', sans-serif
 .btn
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
     background: linear-gradient(94.77deg, #48B760 0%, #6BB748 100%)
     border-radius: 500px
     font-weight: 800
@@ -12,8 +16,15 @@ body
     text-transform: uppercase
     color: #FFFFFF
     border-style: none
-    padding: 15px 35px
+    padding: 15px 34px
     margin: 0 auto
+    &__stripes
+        background-image: url(assets/img/btn_stripes.svg)
+        mix-blend-mode: overlay
+        opacity: 1
+        position: absolute
+        width: 100%
+        height: 100%
     &:hover
         cursor: pointer
 
@@ -28,31 +39,31 @@ body
         border-radius: 116px
         transform: rotate(-30deg)
         z-index: -1
-    &__stripe1
-        width: 232px
-        height: 512px
-        left: -261.12px
-        top: 115.05px
-    &__stripe2
-        width: 232px
-        height: 911px
-        left: 155.15px
-        top: -84.42px
-    &__stripe3
-        width: 232px
-        height: 338px
-        left: 535.42px
-        top: 138.44px
-    &__stripe4
-        width: 232px
-        height: 923px
-        left: 950.19px
-        top: -153.03px
-    &__stripe5
-        width: 232px
-        height: 472px
-        left: 1373.45px
-        top: 86.54px
+        &_stripe1
+            width: 232px
+            height: 512px
+            left: -261.12px
+            top: 115.05px
+        &_stripe2
+            width: 232px
+            height: 911px
+            left: 155.15px
+            top: -84.42px
+        &_stripe3
+            width: 232px
+            height: 338px
+            left: 535.42px
+            top: 138.44px
+        &_stripe4
+            width: 232px
+            height: 923px
+            left: 950.19px
+            top: -153.03px
+        &_stripe5
+            width: 232px
+            height: 472px
+            left: 1373.45px
+            top: 86.54px
     &__icon
         position: absolute
         display: inline-block
@@ -86,8 +97,7 @@ body
     border-radius: 20px
     max-width: 315px
     text-align: center
-    &__wrapper
-        padding: 40px 44px
+    padding: 40px 44px
     &__icon
         margin-bottom: 40px
     &__title
