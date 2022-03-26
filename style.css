@@ -71,8 +71,66 @@ body {
   height: 100%;
 }
 
+.btn__agrobot {
+  padding: 15px 24px;
+  margin-left: 0px;
+}
+
 .btn:hover {
   cursor: pointer;
+}
+
+/* AGROBOT */
+.agrobot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.banner__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 135px;
+  line-height: 144px;
+  color: #4F4F4F;
+}
+
+.banner__title_green {
+  color: #48B760;
+}
+
+.banner__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #BDBDBD;
+}
+
+.banner__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.banner__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.banner__img-block {
+  text-align: center;
 }
 
 /* Товары и услуги */
