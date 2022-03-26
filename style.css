@@ -1,17 +1,4 @@
 @charset "UTF-8";
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 1340px;
-}
-
 @font-face {
   font-family: 'SF Pro Display';
   src: url(assets/font/SFPRODISPLAYREGULAR.OTF);
@@ -83,20 +70,20 @@ body {
   height: 100%;
 }
 
-.btn_goods {
-  margin: 0 auto;
+.btn__agrobot {
+  padding: 15px 25px;
+  margin-left: 0px;
 }
 
-.btn_shadow {
-  -webkit-box-shadow: 0px 20px 20px rgba(115, 205, 0, 0.3);
-          box-shadow: 0px 20px 20px rgba(115, 205, 0, 0.3);
+.btn_goods {
+  margin: 0 auto;
 }
 
 .btn:hover {
   cursor: pointer;
 }
 
-/* header*/
+/* Header */
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,8 +94,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
-  padding: 0 50px 0;
   max-width: 1340px;
 }
 
@@ -126,19 +111,18 @@ body {
 
 .header__name {
   margin-left: 12px;
+  height: 43px;
 }
 
 .header__name-agro {
   font-size: 36px;
   font-weight: 700;
-  line-height: 43px;
   color: #4F4F4F;
   text-transform: uppercase;
 }
 
 .header__name-bot {
   font-size: 10px;
-  line-height: 12px;
   color: #48B760;
 }
 
@@ -179,6 +163,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.header__link:hover {
+  color: #000;
+}
+
+.header__link_main {
+  color: #000;
+}
+
 .header__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,21 +181,68 @@ body {
           flex-direction: column;
 }
 
-.header__link_main {
-  color: #000;
+/* AGROBOT */
+.agrobot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.banner__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 135px;
+  line-height: 144px;
+  color: #4F4F4F;
+}
+
+.banner__title_green {
+  color: #48B760;
+}
+
+.banner__description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #BDBDBD;
+}
+
+.banner__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #828282;
+}
+
+.banner__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.banner__img-block {
+  text-align: center;
 }
 
 /* Товары и услуги */
 .goods {
-  margin: 50px;
+  padding: 15px 50px 30px 50px;
   position: relative;
+  overflow: hidden;
 }
 
 .goods__background {
-  background-image: url(assets/img/graystripe1.svg);
   position: absolute;
-<<<<<<< HEAD
-=======
   background: #F2F2F2;
   opacity: 0.5;
   border-radius: 116px;
@@ -215,37 +254,36 @@ body {
 .goods__background_stripe1 {
   width: 232px;
   height: 512px;
-  left: -261.12px;
-  top: 115.05px;
+  left: -210px;
+  top: 214px;
 }
 
 .goods__background_stripe2 {
   width: 232px;
   height: 911px;
-  left: 155.15px;
-  top: -84.42px;
+  left: 208px;
+  top: 17px;
 }
 
 .goods__background_stripe3 {
   width: 232px;
   height: 338px;
-  left: 535.42px;
-  top: 138.44px;
+  left: 586px;
+  top: 238px;
 }
 
 .goods__background_stripe4 {
   width: 232px;
   height: 923px;
-  left: 950.19px;
-  top: -153.03px;
+  right: 207px;
+  top: -55px;
 }
 
 .goods__background_stripe5 {
   width: 232px;
   height: 472px;
-  left: 1373.45px;
-  top: 86.54px;
->>>>>>> f6aeb02717f479bcf80d6241b048992d2d64bb3a
+  right: -217px;
+  top: 185px;
 }
 
 .goods__icon {
@@ -255,7 +293,7 @@ body {
   background-repeat: no-repeat;
   width: 50px;
   height: 50px;
-  top: 80px;
+  top: 175px;
 }
 
 .goods__title {
@@ -294,7 +332,7 @@ body {
 }
 
 .product__icon {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .product__title {
@@ -316,8 +354,6 @@ body {
 .arrow {
   display: none;
 }
-<<<<<<< HEAD
-=======
 
 /* Footer */
 .footer {
@@ -464,5 +500,4 @@ body {
   text-transform: uppercase;
   font-weight: 700;
 }
->>>>>>> f6aeb02717f479bcf80d6241b048992d2d64bb3a
 /*# sourceMappingURL=style.css.map */
