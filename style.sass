@@ -49,28 +49,76 @@ body
         height: 100%
     &:hover
         cursor: pointer
-
+/* Header */        
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 1340px
+    &__logo
+        display: flex
+        justify-content: start
+        align-items: center
+    &__name
+        margin-left: 12px
+        height: 43px
+    &__name-agro
+        font-size: 36px
+        font-weight: 700
+        color: #4F4F4F
+        text-transform: uppercase
+    &__name-bot
+        font-size: 10px
+        color: #48B760
+    &__menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__item
+        list-style: none
+        font-size: 14px
+        font-weight: 400
+        line-height: 18px
+        height: 32px
+    &__link
+        text-decoration: none
+        color: #828282
+    &__item
+        &_main
+            background-image: url(assets/img/round.svg)
+            background-position: center
+            background-repeat: no-repeat
+        &:hover
+            background-image: url(assets/img/round.svg)
+            background-position: center
+            background-repeat: no-repeat
+    &__link
+        &:hover
+            color: #000
+        &_main
+            color: #000
+    &__buttons
+        display: flex
+        flex-direction: column
    
 
-* Товары и услуги */
+/* Товары и услуги */
 .goods
     margin: 50px
     position: relative
     &__background
         background-image: url(assets/img/graystripe1.svg)
         position: absolute
-<<<<<<< HEAD
-=======
-    background: #F2F2F2
-    opacity: 0.5
-    border-radius: 116px
-    transform: rotate(-30deg)
-    z-index: -1
-    &_stripe1
-        width: 232px
-        height: 512px
-        left: -261.12px
-        top: 115.05px
+        background: #F2F2F2
+        opacity: 0.5
+        border-radius: 116px
+        transform: rotate(-30deg)
+        z-index: -1
+        &_stripe1
+            width: 232px
+            height: 512px
+            left: -261.12px
+            top: 115.05px
         &_stripe2
             width: 232px
             height: 911px
@@ -91,7 +139,6 @@ body
             height: 472px
             left: 1373.45px
             top: 86.54px
->>>>>>> f6aeb02717f479bcf80d6241b048992d2d64bb3a
     &__icon
         position: absolute
         display: inline-block
@@ -140,8 +187,6 @@ body
         margin-bottom: 30px
 .arrow
     display: none
-<<<<<<< HEAD
-=======
 
 /* Footer */
 .footer
@@ -221,4 +266,4 @@ body
         color: #BDBDBD
         text-transform: uppercase
         font-weight: 700
->>>>>>> f6aeb02717f479bcf80d6241b048992d2d64bb3a
+
