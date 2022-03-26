@@ -14,26 +14,28 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="header__logo">
             <div><img class="header__img" src="assets/img/icon.svg" alt=""></div>
             <div class="header__name">
-                <div>Agro</div>
-                <div>bot</div>
+                <div class="header__name-agro">Agro</div>
+                <div class="header__name-bot">bot</div>
             </div>
         </div>
-        <nav>
+        <nav class="header__navigation">
             <ul class="header__menu">
-                <li><a href="">Главная</a></li>
-                <li><a href="">Товары и Услуги</a></li>
-                <li><a href="">Как с нами работать?</a></li>
-                <li><a href="">Партнеры</a></li>
-                <li><a href="">Кредитование</a></li>
-                <li><a href="">Контакты</a></li>
+                <li class="header__item header__item_main"><a class="header__link header__link_main" href="">Главная</a></li>
+                <li class="header__item"><a class="header__link" href="">Товары и Услуги</a></li>
+                <li class="header__item"><a class="header__link" href="">Как с нами работать?</a></li>
+                <li class="header__item"><a class="header__link" href="">Партнеры</a></li>
+                <li class="header__item"><a class="header__link" href="">Кредитование</a></li>
+                <li class="header__item"><a class="header__link" href="">Контакты</a></li>
             </ul>
         </nav>
-        <button class="header__button button-subscribe">+7 (999) 999-99-99</button>
-        <button class="header__button button-subscribe">Нужен обратный звонок</button>
+        <div class="header__buttons">
+            <button class="header__btnphone button-subscribe">+7 (999) 999-99-99</button>
+            <button class="header__btncontact btncontact-subscribe">Нужен обратный звонок</button>
+        </div>
     </header>
     <main>
         <!--AGROBOT-->
