@@ -1,2 +1,67 @@
-/* Footer */
+@charset "UTF-8";
+/* Товары и услуги */
+@media screen and (max-width: 768px) {
+  .goods {
+    padding: 16px 16px 36px 16px;
+  }
+  .goods__background {
+    display: none;
+  }
+  .goods__icon {
+    width: 24px;
+    height: 24px;
+    top: 57px;
+  }
+  .goods__title {
+    margin-left: 15px;
+    font-size: 24px;
+    margin-bottom: 38px;
+    margin-left: 24px;
+  }
+  .goods__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .goods__text_full {
+    display: none;
+  }
+  .catalog {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 14px;
+    padding: 20px;
+  }
+  .product__icon {
+    width: 62px;
+    height: 62px;
+    margin-bottom: 0;
+  }
+  .product__info {
+    margin-left: 6px;
+  }
+  .product__title {
+    text-align: start;
+    margin-bottom: 3px;
+  }
+  .product__description {
+    margin-bottom: 0;
+  }
+  .product__btn {
+    display: none;
+  }
+  .product__arrow {
+    display: inline-block;
+  }
+}
 /*# sourceMappingURL=media.css.map */

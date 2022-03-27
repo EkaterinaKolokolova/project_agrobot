@@ -1,2 +1,46 @@
 
-/* Footer */
+/* Товары и услуги */
+@media screen and (max-width: 768px)
+    .goods
+        padding: 16px 16px 36px 16px
+        &__background
+            display: none
+        &__icon
+            width: 24px
+            height: 24px
+            top: 57px
+        &__title
+            margin-left: 15px
+            font-size: 24px
+            margin-bottom: 38px
+            margin-left: 24px
+        &__text
+            font-weight: 400
+            font-size: 14px
+            line-height: 18px
+            margin-bottom: 20px
+            &_full
+                display: none
+    .catalog
+        grid-template-columns: 1fr
+        grid-gap: 20px
+    .product
+        display: flex
+        align-items: center
+        gap: 14px
+        padding: 20px
+        &__icon
+            width: 62px
+            height: 62px
+            margin-bottom: 0
+        &__info
+            margin-left: 6px
+        &__title
+            text-align: start
+            margin-bottom: 3px
+        &__description
+            margin-bottom: 0
+        &__btn
+            display: none
+        &__arrow
+            display: inline-block

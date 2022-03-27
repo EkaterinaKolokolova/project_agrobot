@@ -178,6 +178,7 @@ body
         display: inline-block
         background-image: url(../assets/img/icon.svg)
         background-repeat: no-repeat
+        background-size: cover
         width: 50px
         height: 50px
         top: 175px
@@ -189,7 +190,6 @@ body
         margin-bottom: 50px
         margin-left: 25px
     &__text
-        font-weight: 50000
         color: #828282
         font-weight: 500
         font-size: 18px
@@ -206,7 +206,19 @@ body
     text-align: center
     padding: 40px 44px
     &__icon
+        width: 124px
+        height: 124px
+        background-size: cover
+        margin: 0 auto
         margin-bottom: 37px
+        &_seeds
+            background-image: url(../assets/img/seeds.svg)
+        &_branch
+            background-image: url(../assets/img/branch.svg)
+        &_lightning
+            background-image: url(../assets/img/lightning.svg)
+        &_tractor
+            background-image: url(../assets/img/tractor.svg)
     &__title
         font-weight: 700
         color: #828282
@@ -221,8 +233,8 @@ body
         margin-bottom: 30px
     &__btn
         margin: 0 auto
-.arrow
-    display: none
+    &__arrow
+        display: none
 
 /* Footer */
 .footer

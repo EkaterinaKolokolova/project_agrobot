@@ -287,6 +287,7 @@ body {
   display: inline-block;
   background-image: url(../assets/img/icon.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 50px;
   height: 50px;
   top: 175px;
@@ -302,7 +303,6 @@ body {
 }
 
 .goods__text {
-  font-weight: 50000;
   color: #828282;
   font-weight: 500;
   font-size: 18px;
@@ -328,7 +328,27 @@ body {
 }
 
 .product__icon {
+  width: 124px;
+  height: 124px;
+  background-size: cover;
+  margin: 0 auto;
   margin-bottom: 37px;
+}
+
+.product__icon_seeds {
+  background-image: url(../assets/img/seeds.svg);
+}
+
+.product__icon_branch {
+  background-image: url(../assets/img/branch.svg);
+}
+
+.product__icon_lightning {
+  background-image: url(../assets/img/lightning.svg);
+}
+
+.product__icon_tractor {
+  background-image: url(../assets/img/tractor.svg);
 }
 
 .product__title {
@@ -351,7 +371,7 @@ body {
   margin: 0 auto;
 }
 
-.arrow {
+.product__arrow {
   display: none;
 }
 
