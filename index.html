@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -68,11 +68,11 @@
         </section>
         <!--Товары и услуги-->
         <section class="goods">
-            <span class="goods__background goods__background_stripe1"></span>
-            <span class="goods__background goods__background_stripe2"></span>
-            <span class="goods__background goods__background_stripe3"></span>
-            <span class="goods__background goods__background_stripe4"></span>
-            <span class="goods__background goods__background_stripe5"></span>
+            <div class="goods__background goods__background_stripe1"></div>
+            <div class="goods__background goods__background_stripe2"></div>
+            <div class="goods__background goods__background_stripe3"></div>
+            <div class="goods__background goods__background_stripe4"></div>
+            <div class="goods__background goods__background_stripe5"></div>
             <h2 class="goods__title">Товары и услуги</h2>
             <span class="goods__icon"></span>
             <p class="goods__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
@@ -213,19 +213,21 @@
     </main>
     <footer class="footer">
         <span class="footer__logo"></span>
-        <ul class="site-map">
-            <div class="site-map__group1">
-                <h4 class="site-map__title">Карта сайта</h4>
-                <li class="site-map__item"><a class="site-map__link site-map__link_main" href="#">Главная</a></li>
-                <li class="site-map__item"><a class="site-map__link" href="#">Товары и Услуги</a></li>
-                <li class="site-map__item"><a class="site-map__link" href="#">Как с нами работать?</a></li>
+        <nav class="site-map">
+            <h4 class="site-map__title">Карта сайта</h4>
+            <div class="site-map__list"> 
+                <ul class="site-map__sublist site-map__sublist_sublist1">
+                    <li class="site-map__item"><a class="site-map__link site-map__link_main" href="#">Главная</a></li>
+                    <li class="site-map__item"><a class="site-map__link" href="#">Товары и Услуги</a></li>
+                    <li class="site-map__item"><a class="site-map__link" href="#">Как с нами работать?</a></li>
+                </ul>
+                <ul class="site-map__sublist site-map__sublist_sublist2">
+                    <li class="site-map__item"><a class="site-map__link" href="#">Партнеры</a></li>
+                    <li class="site-map__item"><a class="site-map__link" href="#">Кредитование</a></li>
+                    <li class="site-map__item"><a class="site-map__link" href="#">Контакты</a></li>
+                </ul>
             </div>
-            <div class="site-map__group2">
-                <li class="site-map__item"><a class="site-map__link" href="#">Партнеры</a></li>
-                <li class="site-map__item"><a class="site-map__link" href="#">Кредитование</a></li>
-                <li class="site-map__item"><a class="site-map__link" href="#">Контакты</a></li>
-            </div>
-        </ul>
+        </nav>
         <div class="social">
             <h4 class="social__title">Социальные сети</h4>
             <ul class="social__list">
@@ -237,7 +239,7 @@
                 <li class="social__item"><a class="social__link social__link_youtube" href="#" target="_blank"></a></li>
             </ul>
         </div>
-        <p class="copyright">Все авторские права принадлежат AGROBOT 2020 год. Правила использования торговой марки <br>
+        <p class="copyright">Все авторские права принадлежат AGROBOT 2020 год. Правила использования торговой марки <br/>
             <span class="copyright__company">AGROBOT</span>
         </p>
     </footer>
