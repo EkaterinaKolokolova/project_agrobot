@@ -375,6 +375,50 @@ body {
   display: none;
 }
 
+/* Наши партнеры */
+.partners {
+  padding: 100px 52px 70px 50px;
+}
+
+.partners__title {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 110px;
+  color: #4F4F4F;
+}
+
+.partners__text {
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #828282;
+}
+
+.bank {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 91px;
+  text-align: center;
+}
+
+.bank__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+}
+
 /* Footer */
 .footer {
   position: relative;
