@@ -25,6 +25,22 @@
     font-weight: 900
 body
     font-family: 'SF Pro Display', sans-serif
+.title
+    position: relative
+    font-weight: 900
+    font-size: 96px
+    line-height: 110px
+    text-transform: uppercase
+    color: #4F4F4F
+.icon
+    position: absolute
+    display: inline-block
+    background-image: url(../assets/img/icon.svg)
+    background-repeat: no-repeat
+    background-size: cover
+    width: 50px
+    height: 50px
+    top: 80px
 .btn
     position: relative
     display: flex
@@ -138,7 +154,7 @@ body
 
 /* Товары и услуги */
 .goods
-    padding: 15px 50px 30px 50px
+    padding: 0px 50px 30px 50px
     position: relative
     overflow: hidden
     &__background
@@ -174,21 +190,9 @@ body
             right: -217px
             top: 185px
     &__icon
-        position: absolute
-        display: inline-block
-        background-image: url(../assets/img/icon.svg)
-        background-repeat: no-repeat
-        background-size: cover
-        width: 50px
-        height: 50px
-        top: 175px
+        margin-left: -25px
     &__title
-        font-weight: 900
-        text-transform: uppercase
-        color: #4F4F4F
-        font-size: 96px
-        margin-bottom: 50px
-        margin-left: 25px
+        margin: 98px 0px 50px 25px
     &__text
         color: #828282
         font-weight: 500
@@ -210,7 +214,7 @@ body
         height: 124px
         background-size: cover
         margin: 0 auto
-        margin-bottom: 37px
+        margin-bottom: 42px
         &_seeds
             background-image: url(../assets/img/seeds.svg)
         &_branch
@@ -305,6 +309,8 @@ body
         font-size: 14px
         text-decoration: none
         color: #828282
+        &:hover
+            text-decoration: underline
         &_main
             color: #BDBDBD
 .social
@@ -338,9 +344,16 @@ body
     font-weight: 400
     font-size: 14px
     line-height: 18px
-    margin-top: 30px
+    color: #828282
+    margin-top: 27px
     margin-bottom: 0
-    &__company
-        color: #BDBDBD
+    &_bold
         text-transform: uppercase
         font-weight: 700
+    &_light
+        color: #BDBDBD
+    &__link
+        text-decoration: none
+        color: #828282
+        &:hover
+            text-decoration: underline
