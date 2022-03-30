@@ -452,6 +452,10 @@ body {
   color: #828282;
 }
 
+.partners__btn {
+  padding: 15px 25px;
+}
+
 .bank {
   display: -ms-grid;
   display: grid;
