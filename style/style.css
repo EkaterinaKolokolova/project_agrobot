@@ -497,7 +497,7 @@ input:focus:required:valid {
 }
 
 .contact {
-  background-image: url(assets/img/background3.svg), url(assets/img/background32.svg);
+  background-image: url(../assets/img/background3.svg), url(../assets/img/background32.svg);
   background-repeat: no-repeat, no-repeat;
   background-size: 100%;
   margin: 0 auto;
@@ -583,7 +583,7 @@ input:focus:required:valid {
   background: #F2F2F2;
   border-radius: 34px;
   border: none;
-  padding: 21px 30px 77px;
+  padding: 21px 30px 30px;
 }
 
 .contact__forms_textarea:focus {
