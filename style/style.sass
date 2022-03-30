@@ -73,9 +73,11 @@ body
         cursor: pointer
 /* Header */        
 .header
-    display: flex
-    justify-content: space-between
+    display: grid
+    grid-template-columns: 162px 1fr 180px
     align-items: center
+    margin: 0 auto
+    padding: 25px 50px 0
     max-width: 1340px
     &__logo
         display: flex
@@ -89,40 +91,71 @@ body
         font-weight: 700
         color: #4F4F4F
         text-transform: uppercase
+        line-height: 33px
     &__name-bot
         font-size: 10px
         color: #48B760
+        letter-spacing: 5px
     &__menu
         display: flex
-        justify-content: space-between
+        justify-content: space-around
         align-items: center
+        max-width: 725px
+        margin: 0 auto
     &__item
         list-style: none
         font-size: 14px
-        font-weight: 400
+        font-weight: 200
         line-height: 18px
         height: 32px
+        &_main
+            background-image: url(assets/img/round.svg)
+            background-position: top
+            background-repeat: no-repeat
+        &:hover
+            background-image: url(assets/img/round.svg)
+            background-position: top
+            background-repeat: no-repeat
     &__link
         text-decoration: none
         color: #828282
-    &__item
         &_main
-            background-image: url(../assets/img/round.svg)
-            background-position: center
-            background-repeat: no-repeat
+            color: #4F4F4F
         &:hover
-            background-image: url(../assets/img/round.svg)
-            background-position: center
-            background-repeat: no-repeat
-    &__link
-        &:hover
-            color: #000
-        &_main
-            color: #000
+            color: #4F4F4F
     &__buttons
-        display: flex
-        flex-direction: column
-
+        height: 120px
+        width: 180px
+    &__btncontact
+        position: absolute
+        top: 74px
+        right: 49px
+        border: none
+        height: 58px
+        width: 164px
+        background: #4B6350
+        color: #FFFFFF
+        border-radius: 0px 0px 22px 22px
+        font-weight: 200
+        font-size: 14px
+        line-height: 18px
+        padding: 29px 38px 11px 38px
+    &__btnphone
+        font-size: 14px
+        font-weight: 600, Semi Bold
+        line-height: 18px
+        padding: 13px 21px
+        position: absolute
+        top: 52px
+        right: 49px
+        height: 44px
+        width: 180px
+.button-subscribe
+    border: none
+    color: #FFFFFF
+    border-radius: 22px
+    background: url(assets/img/btn_stripes.svg), linear-gradient(94.77deg, #48B760 0%, #6BB748 100%)
+    opacity: 1, 0
 /* AGROBOT */
 .agrobot
     display: flex
@@ -271,7 +304,122 @@ body
         display: flex
         justify-content: center
         padding-top: 50px
-
+/*Обратная связь*/
+textarea
+    resize: none
+input[type='number']
+    -moz-appearance: textfield
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+input:focus:required:invalid
+    border-color: red
+    color: red
+input:focus:required:valid
+    color: green
+.contact
+    background-image: url(assets/img/background3.svg), url(assets/img/background32.svg)
+    background-repeat: no-repeat, no-repeat
+    background-size: 100%
+    margin: 0 auto
+    &__title
+        font-weight: 900
+        text-transform: uppercase
+        color: #4F4F4F
+        font-size: 96px
+        padding: 100px 0 0 86px
+    &__icon
+        position: relative
+        bottom: 31px
+        left: 51px
+    &__container
+        display: grid
+        grid-template-columns: 506px 1fr
+        max-width: 1340px
+        margin: 0 50px
+        gap: 50px
+    &__forms
+        display: flex
+        flex-direction: column
+        gap: 16px
+        width: 506px
+        &_input
+            background: #F2F2F2
+            border-radius: 34px
+            border: none
+            padding: 20px 46px
+            font-weight: 400
+            font-size: 24px
+            &:focus
+                outline: 0
+                outline-offset: 0
+            &::placeholder
+                color: #BDBDBD
+                font-weight: 400
+                font-size: 24px
+        &_textarea
+            font-weight: 400
+            font-size: 24px
+            background: #F2F2F2
+            border-radius: 34px
+            border: none
+            padding: 21px 30px 77px
+            &:focus
+                outline: 0
+                outline-offset: 0
+            &::placeholder
+                font-family: 'SF Pro Display'
+                color: #BDBDBD
+                font-weight: 400
+                font-size: 24px
+    &__button
+        box-shadow: 0px 20px 20px rgba(115, 205, 0, 0.3)
+        width: 200px
+        height: 48px
+        font-size: 14px
+        font-weight: 800
+        line-height: 18px
+        text-transform: uppercase
+        margin: 18px 0 130px 48px
+    &__point
+        padding: 137px 0 56px
+    &__map
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 11px
+        height: 440px
+        border-radius: 34px
+        background-image: url(assets/img/map.svg)
+        background-repeat: no-repeat
+.cart
+    display: grid
+    grid-template-columns: 230px 130px
+    border-radius: 10px
+    padding-top: 3px
+    &__info
+        background: #FFFFFF
+        border-bottom-left-radius: 10px
+        border-top-left-radius: 10px
+    &__title
+        font-weight: 700
+        font-size: 14px
+        line-height: 15px
+        color: #4F4F4F
+        text-transform: uppercase
+        margin: 20px 0 13px 20px
+    &__text
+        font-weight: 500
+        font-size: 14px
+        line-height: 18px
+        color: #828282
+        display: flex
+        justify-content: start
+        align-items: start
+        margin: 8px 0 0 24px
+        max-width: 175px
+    &__icon
+        margin-right: 10px
 /* Footer */
 .footer
     position: relative
