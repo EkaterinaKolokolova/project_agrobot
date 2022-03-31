@@ -7,6 +7,65 @@
   .title {
     font-size: 24px;
     line-height: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .agrobot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banner__title {
+    font-size: 70px;
+    line-height: 82px;
+  }
+  .banner__description {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .banner__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .banner__img-block {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-top: 20px;
+    padding-left: -45px;
+  }
+  .banner__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .banner__img_big {
+    display: none;
+  }
+  .banner__img_small {
+    padding: 20px;
   }
   .goods {
     padding: 16px 16px 36px 16px;
@@ -68,6 +127,19 @@
   }
   .product__arrow {
     display: inline-block;
+  }
+  .partners__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .partners__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .bank {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
   }
   .footer {
     -ms-grid-columns: 1fr;

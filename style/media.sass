@@ -7,6 +7,38 @@
     .title
         font-size: 24px
         line-height: 36px
+        display: flex
+        align-items: center
+
+    .agrobot
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+        align-items: center
+    .banner
+        &__title
+            font-size: 70px
+            line-height: 82px
+        &__description
+            font-size: 14px
+            line-height: 16px
+        &__text
+            font-size: 14px
+            line-height: 18px
+        &__img-block
+            display: inline-flex
+            padding-top: 20px
+            padding-left: -45px
+        &__img
+            display: flex
+            flex-flow: column-reverse
+            justify-content: flex-start
+            align-items: flex-start
+            &_big
+                display: none
+            &_small
+                padding: 20px
+
     .goods
         padding: 16px 16px 36px 16px
         &__background
@@ -46,6 +78,17 @@
             display: none
         &__arrow
             display: inline-block
+
+    .partners
+        &__title
+            font-size: 24px
+            line-height: 36px
+        &__text
+            font-size: 14px
+            line-height: 18px
+    .bank
+        grid-template-columns: 1fr 1fr
+        grid-gap: 25px
     .footer
         grid-template-columns: 1fr
         padding: 30px 21px 30px 16px
