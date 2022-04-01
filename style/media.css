@@ -141,6 +141,7 @@
   }
   .work {
     padding: 0px 16px 16px 16px;
+    margin-bottom: 0;
   }
   .work__background {
     display: none;
@@ -178,6 +179,80 @@
     width: 225px;
   }
   .work-stage__description_extra {
+    display: none;
+  }
+  .credit {
+    padding: 0px 16px 30px 16px;
+  }
+  .credit__header {
+    margin-bottom: 95px;
+  }
+  .credit__title {
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+  .credit__icon {
+    left: -24px;
+  }
+  .credit__text {
+    left: 25px;
+    top: 40px;
+    width: 205px;
+  }
+  .credit__banner {
+    background-image: url(../assets/img/credit_main_small.jpg);
+    margin-bottom: 0px;
+  }
+  .credit__slogan {
+    font-size: 24px;
+    line-height: 25px;
+    width: 279px;
+    margin-left: 12px;
+    padding-top: 142px;
+    padding-bottom: 11px;
+  }
+  .bank-icon {
+    width: 72px;
+    height: 24px;
+    margin-left: 17px;
+    margin-top: -20px;
+  }
+  .leasing__details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 44px;
+  }
+  .leasing__wrap {
+    -ms-grid-columns: 62% 38%;
+        grid-template-columns: 62% 38%;
+    row-gap: 20px;
+  }
+  .leasing__wrap2 {
+    -ms-grid-columns: 61% 49%;
+        grid-template-columns: 61% 49%;
+    row-gap: 13px;
+  }
+  .leasing__title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .leasing__item {
+    font-size: 14px;
+    line-height: 18px;
+    width: 227px;
+  }
+  .leasing__item_bold {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: end;
+    width: 126px;
+    letter-spacing: 0;
+  }
+  .leasing__special {
     display: none;
   }
   .partners {

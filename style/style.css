@@ -590,9 +590,150 @@ body {
   margin-bottom: 0;
 }
 
+/* Кредитование */
+.credit {
+  padding: 20px 50px 50px 50px;
+  background-image: url(../assets/img/credit_back.png);
+  background-size: cover;
+}
+
+.credit__header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.credit__title {
+  margin-left: 36px;
+}
+
+.credit__icon {
+  left: -36px;
+}
+
+.credit__text {
+  position: absolute;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4F4F4F;
+  max-width: 290px;
+  top: 176px;
+  left: 75px;
+}
+
+.credit__banner {
+  background-image: url(../assets/img/credit_main.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  margin-bottom: 13px;
+}
+
+.credit__slogan {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 58px;
+  color: #333333;
+  max-width: 581px;
+  padding-top: 153px;
+  padding-bottom: 147px;
+  margin: 0;
+  margin-left: 50px;
+}
+
+.credit__slogan_leasing {
+  background: linear-gradient(94.77deg, #48B760 0%, #6BB748 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.credit__btn {
+  margin: 0 auto;
+  padding: 15px 32px;
+}
+
+.bank-icon {
+  background-image: url(../assets/img/bank.svg);
+  background-size: cover;
+  width: 262px;
+  height: 86px;
+  margin-left: 61px;
+}
+
+.leasing__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: #4F4F4F;
+  margin-bottom: 29px;
+}
+
+.leasing__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #4F4F4F;
+  max-width: 288px;
+}
+
+.leasing__item_bold {
+  font-weight: 700;
+  margin-top: 3px;
+  letter-spacing: 1px;
+}
+
+.leasing__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.leasing__term {
+  -webkit-box-flex: 46%;
+      -ms-flex: 46%;
+          flex: 46%;
+}
+
+.leasing__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 56% 44%;
+      grid-template-columns: 56% 44%;
+  row-gap: 30px;
+}
+
+.leasing__conditions {
+  -webkit-box-flex: 54%;
+      -ms-flex: 54%;
+          flex: 54%;
+}
+
+.leasing__wrap2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 47% 53%;
+      grid-template-columns: 47% 53%;
+  row-gap: 30px;
+}
+
+.leasing__special {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #BDBDBD;
+  margin-bottom: 50px;
+}
+
 /* Наши партнеры */
 .partners {
-  padding: 100px 52px 70px 90px;
+  padding: 20px 52px 70px 90px;
 }
 
 .partners__title {

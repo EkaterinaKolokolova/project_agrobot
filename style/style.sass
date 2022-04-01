@@ -383,9 +383,100 @@ body
         color: #828282
         margin-bottom: 0
 
+/* Кредитование */
+.credit
+    padding: 20px 50px 50px 50px
+    background-image: url(../assets/img/credit_back.png)
+    background-size: cover
+    &__header
+        position: relative
+        display: flex
+        align-items: center
+    &__title
+        margin-left: 36px
+    &__icon
+        left: -36px
+    &__text
+        position: absolute
+        font-weight: 600
+        font-size: 14px
+        line-height: 18px
+        color: #4F4F4F
+        max-width: 290px
+        top: 176px
+        left: 75px
+    &__banner
+        background-image: url(../assets/img/credit_main.jpg)
+        background-size: cover
+        border-radius: 20px
+        margin-bottom: 13px
+    &__slogan
+        font-weight: 700
+        font-size: 50px
+        line-height: 58px
+        color: #333333
+        max-width: 581px
+        padding-top: 153px
+        padding-bottom: 147px
+        margin: 0
+        margin-left: 50px
+        &_leasing
+            background: linear-gradient(94.77deg, #48B760 0%, #6BB748 100%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            background-clip: text
+            text-fill-color: transparent
+    &__btn
+        margin: 0 auto
+        padding: 15px 32px
+.bank-icon
+    background-image: url(../assets/img/bank.svg)
+    background-size: cover
+    width: 262px
+    height: 86px
+    margin-left: 61px
+.leasing
+    &__title
+        font-weight: 700
+        font-size: 24px
+        line-height: 26px
+        color: #4F4F4F
+        margin-bottom: 29px
+    &__item
+        font-weight: 500
+        font-size: 18px
+        line-height: 24px
+        color: #4F4F4F
+        max-width: 288px
+        &_bold
+            font-weight: 700
+            margin-top: 3px
+            letter-spacing: 1px
+    &__details
+        display: flex
+        margin-bottom: 24px
+    &__term
+        flex: 46%
+    &__wrap
+        display: grid
+        grid-template-columns: 56% 44%
+        row-gap: 30px
+    &__conditions
+        flex: 54%
+    &__wrap2
+        display: grid
+        grid-template-columns: 47% 53%
+        row-gap: 30px
+    &__special
+        font-weight: 500
+        font-size: 14px
+        line-height: 24px
+        color: #BDBDBD
+        margin-bottom: 50px
+
 /* Наши партнеры */     
 .partners
-    padding: 100px 52px 70px 90px
+    padding: 20px 52px 70px 90px
     &__title
         font-family: 'SF Pro Display'
         font-style: normal
