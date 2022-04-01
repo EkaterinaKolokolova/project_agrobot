@@ -90,11 +90,6 @@ body {
   height: 100%;
 }
 
-.btn__agrobot {
-  padding: 15px 25px;
-  margin-left: 0px;
-}
-
 .btn_deals {
   padding: 15px 25px;
   margin-left: 580px;
@@ -103,6 +98,27 @@ body {
 
 .btn:hover {
   cursor: pointer;
+}
+
+.bot {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 10px;
+}
+
+.bot__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #BDBDBD;
+  padding-left: 23px;
 }
 
 /* Header */
@@ -247,6 +263,14 @@ body {
   padding: 100px 50px 70px 50px;
 }
 
+.agrobot__btn {
+  padding: 15px 25px;
+  margin-left: 0px;
+  position: absolute;
+  left: 50px;
+  bottom: 344px;
+}
+
 .banner__title {
   font-family: 'Roboto';
   font-style: normal;
@@ -290,25 +314,6 @@ body {
 
 .banner__img-block {
   text-align: center;
-}
-
-.bot {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.bot__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #BDBDBD;
-  padding-left: 23px;
 }
 
 /* Товары и услуги */
