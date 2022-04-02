@@ -1,5 +1,86 @@
 
 @media screen and (max-width: 768px)
+    .header
+        display: flex
+        align-items: start
+        justify-content: space-between
+        margin: 0 auto
+        padding: 16px 16px 0
+        &__little-img
+            display: block
+        &__img
+            display: none
+        &__name
+            display: none
+        &__item
+            &:hover
+                background-image: none
+        &__burger
+            display: block
+            &_toggle
+                display: block
+                position: relative
+                top: 50px
+                left: 50px
+                z-index: 1
+                -webkit-user-select: none
+                user-select: none
+            &_form
+                display: block
+                width: 40px
+                height: 32px
+                position: absolute
+                top: -7px
+                left: -5px
+                cursor: pointer
+                opacity: 0
+                z-index: 2
+                -webkit-touch-callout: none
+                &:checked ~ span
+                    opacity: 1
+                    transform: rotate(45deg) translate(-2px, -1px)
+                    background: #232323
+                &:checked ~ span:nth-last-child(3)
+                    opacity: 0
+                    transform: rotate(0deg) scale(0.2, 0.2)
+                &:checked ~ span:nth-last-child(2)
+                    transform: rotate(-45deg) translate(0, -1px)
+                &:checked ~ ul
+                    transform: none
+            &_icon
+                display: block
+                width: 33px
+                height: 4px
+                margin-bottom: 5px
+                position: relative
+                border-radius: 3px
+                z-index: 1
+                transform-origin: 4px 0px
+                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
+                &:first-child
+                    transform-origin: 0% 0%
+                &:nth-last-child(2)
+                    transform-origin: 0% 100%
+        &__menu-burger
+            position: absolute
+            width: 150px
+            margin: -100px 0 0 -50px
+            padding: 50px
+            padding-top: 125px
+            background: #ffffff
+            list-style-type: none
+            -webkit-font-smoothing: antialiased
+            transform-origin: 0% 0%
+            transform: translate(-100%, 0)
+            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+        &__burger-title
+            display: block
+            font-size: 14px
+            line-height: 35px
+        &__navigation
+            display: none
+        &__buttons
+            display: none
     .icon
         width: 24px
         height: 24px
@@ -9,7 +90,6 @@
         line-height: 36px
         display: flex
         align-items: center
-
     .agrobot
         display: flex
         flex-wrap: wrap
@@ -48,9 +128,8 @@
             &_small
                 padding-left: 0px
                 padding-right: 16px
-
     .goods
-        padding: 16px 16px 36px 16px
+        padding: 16px 16px 45px 16px
         &__background
             display: none
         &__title
@@ -88,7 +167,137 @@
             display: none
         &__arrow
             display: inline-block
-
+    .contact
+        background-image: none
+        &__title
+            font-size: 24px
+            padding: 100px 0 16px 40px
+        &__icon
+            display: none
+        &__tiny-icon
+            display: block
+            position: relative
+            bottom: 21px
+            left: 16px
+        &__container
+            grid-template: 340px 116px 404px / 1fr
+            max-width: none
+            margin: 0 16px
+        &__forms
+            width: 100%
+            &_input
+                padding: 16px 30px
+                font-size: 18px
+                &::placeholder
+                    font-size: 18px
+            &_textarea
+                font-size: 18px
+                padding: 19px 30px 18px
+                &::placeholder
+                    font-size: 18px
+        &__button
+            grid-row: 2/3
+            margin: 19px 0 0 0
+        &__point
+            display: none
+        &__map
+            margin-left: 0
+            height: 354px
+    .cart
+        display: grid
+        grid-template-columns: 1fr 82px
+        &__img
+            width: 82px
+            height: 130px
+            object-fit: cover
+            border-bottom-right-radius: 10px
+            border-top-right-radius: 10px
+    .work
+        padding: 0px 16px 16px 16px
+        margin-bottom: 0
+        &__background
+            display: none
+        &__btn
+            margin-bottom: 30px
+        &__title
+            margin-left: 25px
+            margin-bottom: 33px
+        &__icon
+            left: -24px
+    .work-process
+        grid-template-columns: 1fr
+        grid-auto-flow: inherit
+        justify-items: center
+        grid-gap: 38px
+        margin-bottom: 50px
+    .work-stage
+        width: 328px
+        &__title
+            font-weight: 700
+            font-size: 18px
+            line-height: 26px
+        &__description
+            font-weight: 400
+            font-size: 14px
+            line-height: 18px
+            width: 225px
+            &_extra
+                display: none
+    .credit
+        padding: 0px 16px 30px 16px
+        &__header
+            margin-bottom: 95px
+        &__title
+            margin-top: 5px
+            margin-left: 25px
+        &__icon
+            left: -24px
+        &__text
+            left: 25px
+            top: 40px
+            width: 205px
+        &__banner
+            background-image: url(../assets/img/credit_main_small.jpg)
+            margin-bottom: 0px
+        &__slogan
+            font-size: 24px
+            line-height: 25px
+            width: 279px
+            margin-left: 12px
+            padding-top: 142px
+            padding-bottom: 11px
+    .bank-icon
+        width: 72px
+        height: 24px
+        margin-left: 17px
+        margin-top: -20px
+    .leasing
+        &__details
+            flex-direction: column
+            margin-bottom: 44px
+        &__wrap
+            grid-template-columns: 62% 38%
+            row-gap: 20px
+        &__wrap2
+            grid-template-columns: 61% 49%
+            row-gap: 13px
+        &__title
+            font-size: 18px
+            line-height: 26px
+            margin-top: 25px
+            margin-bottom: 20px
+        &__item
+            font-size: 14px
+            line-height: 18px
+            width: 227px
+            &_bold
+                font-size: 14px
+                line-height: 24px
+                text-align: end
+                width: 126px
+                letter-spacing: 0
+        &__special
+            display: none
     .partners
         padding-left: 16px
         padding-right: 16px
