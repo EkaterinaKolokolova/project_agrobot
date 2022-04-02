@@ -109,8 +109,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  padding: 25px 50px 0;
-  max-width: 1340px;
+  padding: 0 50px 0;
+  width: 100%;
 }
 
 .header__little-img {
@@ -165,7 +165,7 @@ body {
   list-style: none;
   font-size: 14px;
   font-weight: 200;
-  line-height: 18px;
+  line-height: 28px;
   height: 32px;
 }
 
@@ -201,7 +201,7 @@ body {
 
 .header__btncontact {
   position: absolute;
-  top: 74px;
+  top: 55px;
   right: 49px;
   border: none;
   height: 58px;
@@ -221,17 +221,13 @@ body {
   line-height: 18px;
   padding: 13px 21px;
   position: absolute;
-  top: 52px;
+  top: 33px;
   right: 49px;
   height: 44px;
   width: 180px;
 }
 
-.header__burger-title {
-  display: none;
-}
-
-.header__burger {
+.burger {
   display: none;
 }
 
@@ -241,7 +237,6 @@ body {
   border-radius: 22px;
   background: url(../assets/img/btn_stripes.svg), linear-gradient(94.77deg, #48B760 0%, #6BB748 100%);
   opacity: 1, 0;
-  mix-blend-mode: overlay,normal;
 }
 
 /* AGROBOT */
@@ -250,7 +245,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: 100px 50px 70px 50px;
+  padding: 83px 50px 70px 50px;
 }
 
 .agrobot__btn {
