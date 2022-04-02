@@ -227,16 +227,16 @@ body {
   width: 180px;
 }
 
-.burger {
-  display: none;
-}
-
 .button-subscribe {
   border: none;
   color: #FFFFFF;
   border-radius: 22px;
   background: url(../assets/img/btn_stripes.svg), linear-gradient(94.77deg, #48B760 0%, #6BB748 100%);
   opacity: 1, 0;
+}
+
+.burger {
+  display: none;
 }
 
 /* AGROBOT */
@@ -295,6 +295,13 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.banner__img_small {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 100px;
 }
 
 .banner__img-block {
@@ -781,7 +788,7 @@ body {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  grid-gap: 91px;
+  grid-gap: 50px;
   text-align: center;
 }
 
