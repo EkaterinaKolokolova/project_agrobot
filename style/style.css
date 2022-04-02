@@ -99,25 +99,6 @@ body {
   cursor: pointer;
 }
 
-.bot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  bottom: 10px;
-}
-
-.bot__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #BDBDBD;
-  padding-left: 23px;
-}
-
 /* Header */
 .header {
   display: -ms-grid;
@@ -456,6 +437,32 @@ body {
 
 .product__arrow {
   display: none;
+}
+
+.bot {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 10px;
+  left: 50px;
+}
+
+.bot__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #BDBDBD;
+  background-color: #ffffff;
+  min-height: 70px;
+  padding-left: 23px;
+  margin: 20px;
+  padding: 10px 30px 10px 10px;
+  border-radius: 20px;
 }
 
 /* Как с нами работать */
