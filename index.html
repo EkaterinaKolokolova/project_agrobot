@@ -15,6 +15,11 @@
 </head>
 
 <body>
+    <div class="bot"><a href="#"><img src="assets/img/bot.svg" alt="bot"></a>
+        <p class="bot__text">Ваш личный отдел закупок готов к работе,сделайте заявку на товар <br> и выбирайте наиболее
+            выгодные условия!</p>
+    </div>
+    </div>
     <header class="header">
         <div class="header__logo">
             <div>
@@ -68,24 +73,24 @@
                 <p class="banner__description"> Это закупочная площадка для сельхозпредприятий</p>
                 <p class="banner__text">Мы создали удобный и бесплатный инструмент поиска выгодных предложений на
                     товары для нужд вашего сельхозпредприятия</p>
-                <button class="btn btn__agrobot"><span class="btn__stripes"></span>Свяжитесь с нами</button>
             </div>
             <div class="banner__img">
                 <div class="banner__img-block">
-                    <img src="assets/img/hand_icon.svg" alt="hands">
+                    <img class="banner__img banner__img_small" src="assets/img/hand_icon.svg" alt="hands">
                     <p>Честная сделка</p>
-                    <img src="assets/img/wheat.png" alt="wheat">
+                    <img class="banner__img banner__img_big" src="assets/img/wheat.png" alt="wheat">
                 </div>
                 <div class="banner__img-block">
-                    <img src="assets/img/glass_icon.svg" alt="glass">
+                    <img class="banner__img banner__img_small" src="assets/img/glass_icon.svg" alt="glass">
                     <p>Быстрый поиск</p>
-                    <img src="assets/img/tract.png" alt="tract">
+                    <img class="banner__img banner__img_big" src="assets/img/tract.png" alt="tract">
                 </div>
                 <div class="banner__img-block">
-                    <img src="assets/img/check_icon.svg" alt="check">
-                    <p>Быстрый поиск</p>
-                    <img src="assets/img/hands.png" alt="hands">
+                    <img class="banner__img banner__img_small" src="assets/img/check_icon.svg" alt="check">
+                    <p>Только проверенные</p>
+                    <img class="banner__img banner__img_big" src="assets/img/hands.png" alt="hands">
                 </div>
+                <button class="btn agrobot__btn btn_shadow"><span class="btn__stripes"></span>Свяжитесь с нами</button>
             </div>
         </section>
         <!--Товары и услуги-->
@@ -141,120 +146,106 @@
             </div>
         </section>
         <!--Как с нами работать-->
-        <section class="deals">
-            <div class="deals_background deals_background_stripe1"></div>
-            <div class="deals_background deals_background_stripe2"></div>
-            <div class="deals_background deals_background_stripe3"></div>
-            <div class="deals_background deals_background_stripe4"></div>
-            <div class="deals_background deals_background_stripe5"></div>
-            <h2 class="deals_title">Как с нами работать</h2>
-            <span class="deals__icon"></span>
-            <div class="deals_points">
-                <div class="deals_point_one">
-                    <div class="deals_flex">
-                        <div class="deals_number">1</div>
-                        <div class="deals_info">
-                            <h1 class="deals_subtitle">W1hat is Lorem Ipsum?</h1>
-                            <p class="deals_description">L1orem Ipsum is simply dummy text of the printing and
-                                typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when
-                                an unknown printer took a galley</p>
-                        </div>
+        <section class="work">
+            <div class="work__background work__background_stripe1"></div>
+            <div class="work__background work__background_stripe2"></div>
+            <div class="work__background work__background_stripe3"></div>
+            <div class="work__background work__background_stripe4"></div>
+            <div class="work__background work__background_stripe5"></div>
+            <h2 class="work__title title"><span class="work__icon icon"></span>Как с нами работать</h2>
+            <div class="work-process">
+                <div class="work-stage">
+                    <div class="work-stage__number">1</div>
+                    <div class="work-stage__info">
+                        <h4 class="work-stage__title">What is Lorem Ipsum?</h4>
+                        <p class="work-stage__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <span class="work-stage__description_extra">text ever since the 1500s, when an unknown printer took a galley</span></p>
                     </div>
                 </div>
-                <div class="deals_point_two">
-                    <div class="deals_flex">
-                        <div class="deals_number">2</div>
-                        <div class="deals_info">
-                            <h1 class="deals_subtitle">W2hat is Lorem Ipsum?</h1>
-                            <p class="deals_description">L2orem Ipsum is simply dummy text of the printing and
-                                typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when
-                                an unknown printer took a galley</p>
-                        </div>
+                <div class="work-stage">
+                    <div class="work-stage__number">2</div>
+                    <div class="work-stage__info">
+                        <h4 class="work-stage__title">What is Lorem Ipsum?</h4>
+                        <p class="work-stage__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <span class="work-stage__description_extra"> text ever since the 1500s, when an unknown printer took a galley</span></p>
                     </div>
                 </div>
-                <div class="deals_point_three">
-                    <div class="deals_flex">
-                        <div class="deals_number">3</div>
-                        <div class="deals_info">
-                            <h1 class="deals_subtitle">W3hat is Lorem Ipsum?</h1>
-                            <p class="deals_description">L3orem Ipsum is simply dummy text of the printing and
-                                typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when
-                                an unknown printer took a galley</p>
-                        </div>
+                <div class="work-stage">
+                    <div class="work-stage__number">3</div>
+                    <div class="work-stage__info">
+                        <h4 class="work-stage__title">What is Lorem Ipsum?</h4>
+                        <p class="work-stage__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <span class="work-stage__description_extra"> text ever since the 1500s, when an unknown printer took a galley</span></p>
                     </div>
                 </div>
-                <div class="deals_point_four">
-                    <div class="deals_flex">
-                        <div class="deals_number">4</div>
-                        <div class="deals_info">
-                            <h1 class="deals_subtitle">W4hat is Lorem Ipsum?</h1>
-                            <p class="deals_description">L4orem Ipsum is simply dummy text of the printing and
-                                typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when
-                                an unknown printer took a galley</p>
-                        </div>
+                <div class="work-stage">
+                    <div class="work-stage__number">4</div>
+                    <div class="work-stage__info">
+                        <h4 class="work-stage__title">What is Lorem Ipsum?</h4>
+                        <p class="work-stage__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <span class="work-stage__description_extra"> text ever since the 1500s, when an unknown printer took a galley</span></p>
                     </div>
                 </div>
-                <div class="deals_point_five">
-                    <div class="deals_flex">
-                        <div class="deals_number">5</div>
-                        <div class="deals_info">
-                            <h1 class="deals_subtitle">W5hat is Lorem Ipsum?</h1>
-                            <p class="deals_description">L5orem Ipsum is simply dummy text of the printing and
-                                typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when
-                                an unknown printer took a galley</p>
-                        </div>
+                <div class="work-stage">
+                    <div class="work-stage__number">5</div>
+                    <div class="work-stage__info">
+                        <h4 class="work-stage__title">What is Lorem Ipsum?</h4>
+                        <p class="work-stage__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <span class="work-stage__description_extra"> text ever since the 1500s, when an unknown printer took a galley</span></p>
                     </div>
                 </div>
             </div>
-            <button class="btn btn_deals"><span class="btn__stripes"></span>Свяжитесь с нами</button>
+            <button class="work__btn btn btn_shadow"><span class="btn__stripes"></span>Свяжитесь с нами</button>
         </section>
         <!--Кредитование-->
-        <section></section>
-        <!--Наши партнеры-->
-        <section class="partners">
-            <h1 class="partners__title">НАШИ ПАРТНЕРЫ</h1>
-            <p class="partners__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an <br> unknown printer took a galley of type
-                and scrambled it to make a type specimen book.</p>
-            <div class="bank">
-                <div class="bank__sovkom">
-                    <img src="assets/img/sovkom.png" alt="sovkom">
+        <section class="credit">
+            <div class="credit__header">
+                <h2 class="credit__title title"><span class="credit__icon icon"></span>Кредитование</h2>
+                <div class="bank-icon"></div>
+                <p class="credit__text">Корпоративный лизинг <br> на спец. технику для сельскохозяйственных предприятий</p>
+            </div>
+            <div class="credit__banner">
+                <p class="credit__slogan">Широкий спектр <span class="credit__slogan_leasing"> лизинговых услуг</span> для предприятий реального сектора экономики</p>
+            </div>
+            <div class="leasing__details">
+                <div class="leasing__term">
+                    <h5 class="leasing__title">Срок лизинга</h5>
+                    <div class="leasing__wrap">
+                        <div class="leasing__item">Транспортные средства, спецтехника, оборудование</div>
+                        <div class="leasing__item_bold">до 5 лет</div>
+                        <div class="leasing__item">Морские/речные/рыболовецкие суда, подвижной и тяговый состав</div>
+                        <div class="leasing__item_bold">до 10 лет</div>
+                    </div>
                 </div>
-                <div class="bank__otkrytie">
-                    <img src="assets/img/otkrytie.png" alt="otkrytie">
-                </div>
-                <div class="bank__tinkoff">
-                    <img src="assets/img/tinkoff.png" alt="tinkoff">
-                </div>
-                <div class="bank__vtb">
-                    <img src="assets/img/vtb.png" alt="vtb">
-                </div>
-                <div class="bank__alfa">
-                    <img src="assets/img/alfa.png" alt="alfa">
-                </div>
-                <div class="bank__gazprom">
-                    <img src="assets/img/gazprom.png" alt="gazprom">
-                </div>
-                <div class="bank__sber">
-                    <img src="assets/img/sber.png" alt="sber">
-                </div>
-                <div class="bank__rosselhoz">
-                    <img src="assets/img/rosselhoz.png" alt="rosselhoz">
+                <div class="leasing__conditions">
+                    <h5 class="leasing__title">Базовые условия</h5>
+                    <div class="leasing__wrap2">
+                        <div class="leasing__item">Аванс</div>
+                        <div class="leasing__item_bold">от 15% *</div>
+                        <div class="leasing__item">Валюта финансирования</div>
+                        <div class="leasing__item_bold">Рубль РФ, Евро, Доллар США</div>
+                        <div class="leasing__item">Минимальная сумма проекта</div>
+                        <div class="leasing__item_bold">от 100 млн. руб. (или эквивалент в валюте) *</div>
+                    </div>
                 </div>
             </div>
+            <div class="leasing__special">* При рассмотрении проекта возможны индивидуальные условия</div>
+            <button class="credit__btn btn btn_shadow"><span class="btn__stripes"></span>Оставить заявку</button>
+        </section>
+        <!--Наши партнеры-->
+        <section class="partners">
+            <h2 class="partners__title title"><span class="partners__icon icon"></span>НАШИ ПАРТНЕРЫ</h2>
+            <p class="partners__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an <br> unknown printer
+                took a galley of type
+                and scrambled it to make a type specimen book.</p>
+            <div class="bank">
+                <img class="bank__img" src="assets/img/sovkom.png" alt="sovkom">
+                <img class="bank__img" src="assets/img/otkrytie.png" alt="otkrytie">
+                <img class="bank__img" src="assets/img/tinkoff.png" alt="tinkoff">
+                <img class="bank__img" src="assets/img/vtb.png" alt="vtb">
+                <img class="bank__img" src="assets/img/alfa.png" alt="alfa">
+                <img class="bank__img" src="assets/img/gazprom.png" alt="gazprom">
+                <img class="bank__img" src="assets/img/sber.png" alt="sber">
+                <img class="bank__img" src="assets/img/rosselhoz.png" alt="rosselhoz">
+            </div>
             <div class="bank__btn">
-                <button class="btn btn__partners"><span class="btn__stripes"></span>Свяжитесь с нами</button>
+                <button class="btn partners__btn btn_shadow"><span class="btn__stripes"></span>Свяжитесь с нами</button>
             </div>
         </section>
         <!--Обратная связь-->
@@ -269,10 +260,17 @@
                 <div class="contact__forms">
                     <input class="contact__forms_input" type="text" placeholder="Имя*" required name="name"
                         pattern="^[А-Яа-яЁё\s]+$" />
+<<<<<<< HEAD
                     <input class="contact__forms_input" type="number" placeholder="Номер телефона*" required
                         name="phone" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" />
                     <input class="contact__forms_input" type="email" placeholder="Электронная почта*" required
                         name="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" />
+=======
+                    <input class="contact__forms_input" type="email" placeholder="Электронная почта*" required
+                        name="email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" />
+                    <input class="contact__forms_input" type="number" placeholder="Номер телефона*" required
+                        name="phone" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" />
+>>>>>>> 6b36f0d5c2da9d03c04ac9c4b2b95352cfedb9f1
                     <textarea class="contact__forms_textarea" rows="5" placeholder="Введите сообщение"></textarea>
                 </div>
                 <div class="contact__map">

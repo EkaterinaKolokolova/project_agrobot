@@ -129,9 +129,79 @@
   .title {
     font-size: 24px;
     line-height: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .agrobot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 16px;
+    padding-right: 20px;
+  }
+  .agrobot__btn {
+    padding: 15px 25px;
+    margin-left: 0px;
+    position: absolute;
+    left: 70px;
+    bottom: 0px;
+  }
+  .banner__title {
+    font-size: 70px;
+    line-height: 82px;
+  }
+  .banner__description {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .banner__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .banner__img-block {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-top: 20px;
+    padding-left: -45px;
+    padding-top: 0px;
+  }
+  .banner__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .banner__img_big {
+    display: none;
+  }
+  .banner__img_small {
+    padding-left: 0px;
+    padding-right: 16px;
   }
   .goods {
-    padding: 16px 16px 36px 16px;
+    padding: 16px 16px 45px 16px;
   }
   .goods__background {
     display: none;
@@ -275,6 +345,142 @@
        object-fit: cover;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+  }
+  .work {
+    padding: 0px 16px 16px 16px;
+    margin-bottom: 0;
+  }
+  .work__background {
+    display: none;
+  }
+  .work__btn {
+    margin-bottom: 30px;
+  }
+  .work__title {
+    margin-left: 25px;
+    margin-bottom: 33px;
+  }
+  .work__icon {
+    left: -24px;
+  }
+  .work-process {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-flow: inherit;
+    justify-items: center;
+    grid-gap: 38px;
+    margin-bottom: 50px;
+  }
+  .work-stage {
+    width: 328px;
+  }
+  .work-stage__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .work-stage__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    width: 225px;
+  }
+  .work-stage__description_extra {
+    display: none;
+  }
+  .credit {
+    padding: 0px 16px 30px 16px;
+  }
+  .credit__header {
+    margin-bottom: 95px;
+  }
+  .credit__title {
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+  .credit__icon {
+    left: -24px;
+  }
+  .credit__text {
+    left: 25px;
+    top: 40px;
+    width: 205px;
+  }
+  .credit__banner {
+    background-image: url(../assets/img/credit_main_small.jpg);
+    margin-bottom: 0px;
+  }
+  .credit__slogan {
+    font-size: 24px;
+    line-height: 25px;
+    width: 279px;
+    margin-left: 12px;
+    padding-top: 142px;
+    padding-bottom: 11px;
+  }
+  .bank-icon {
+    width: 72px;
+    height: 24px;
+    margin-left: 17px;
+    margin-top: -20px;
+  }
+  .leasing__details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 44px;
+  }
+  .leasing__wrap {
+    -ms-grid-columns: 62% 38%;
+        grid-template-columns: 62% 38%;
+    row-gap: 20px;
+  }
+  .leasing__wrap2 {
+    -ms-grid-columns: 61% 49%;
+        grid-template-columns: 61% 49%;
+    row-gap: 13px;
+  }
+  .leasing__title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .leasing__item {
+    font-size: 14px;
+    line-height: 18px;
+    width: 227px;
+  }
+  .leasing__item_bold {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: end;
+    width: 126px;
+    letter-spacing: 0;
+  }
+  .leasing__special {
+    display: none;
+  }
+  .partners {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .partners__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .partners__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .bank {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+  }
+  .bank__img {
+    width: 150px;
   }
   .footer {
     -ms-grid-columns: 1fr;

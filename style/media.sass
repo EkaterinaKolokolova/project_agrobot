@@ -88,8 +88,50 @@
     .title
         font-size: 24px
         line-height: 36px
+        display: flex
+        align-items: center
+
+    .agrobot
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+        align-items: center
+        padding-left: 16px
+        padding-right: 20px
+        &__btn
+            padding: 15px 25px
+            margin-left: 0px
+            position: absolute
+            left: 70px
+            bottom: 0px
+    .banner
+        &__title
+            font-size: 70px
+            line-height: 82px
+        &__description
+            font-size: 14px
+            line-height: 16px
+        &__text
+            font-size: 14px
+            line-height: 18px
+        &__img-block
+            display: inline-flex
+            padding-top: 20px
+            padding-left: -45px
+            padding-top: 0px
+        &__img
+            display: flex
+            flex-flow: column-reverse
+            justify-content: flex-start
+            align-items: flex-start
+            &_big
+                display: none
+            &_small
+                padding-left: 0px
+                padding-right: 16px
+
     .goods
-        padding: 16px 16px 36px 16px
+        padding: 16px 16px 45px 16px
         &__background
             display: none
         &__title
@@ -172,6 +214,108 @@
             object-fit: cover
             border-bottom-right-radius: 10px
             border-top-right-radius: 10px
+
+    .work
+        padding: 0px 16px 16px 16px
+        margin-bottom: 0
+        &__background
+            display: none
+        &__btn
+            margin-bottom: 30px
+        &__title
+            margin-left: 25px
+            margin-bottom: 33px
+        &__icon
+            left: -24px
+    .work-process
+        grid-template-columns: 1fr
+        grid-auto-flow: inherit
+        justify-items: center
+        grid-gap: 38px
+        margin-bottom: 50px
+    .work-stage
+        width: 328px
+        &__title
+            font-weight: 700
+            font-size: 18px
+            line-height: 26px
+        &__description
+            font-weight: 400
+            font-size: 14px
+            line-height: 18px
+            width: 225px
+            &_extra
+                display: none
+    .credit
+        padding: 0px 16px 30px 16px
+        &__header
+            margin-bottom: 95px
+        &__title
+            margin-top: 5px
+            margin-left: 25px
+        &__icon
+            left: -24px
+        &__text
+            left: 25px
+            top: 40px
+            width: 205px
+        &__banner
+            background-image: url(../assets/img/credit_main_small.jpg)
+            margin-bottom: 0px
+        &__slogan
+            font-size: 24px
+            line-height: 25px
+            width: 279px
+            margin-left: 12px
+            padding-top: 142px
+            padding-bottom: 11px
+    .bank-icon
+        width: 72px
+        height: 24px
+        margin-left: 17px
+        margin-top: -20px
+    .leasing
+        &__details
+            flex-direction: column
+            margin-bottom: 44px
+        &__wrap
+            grid-template-columns: 62% 38%
+            row-gap: 20px
+        &__wrap2
+            grid-template-columns: 61% 49%
+            row-gap: 13px
+        &__title
+            font-size: 18px
+            line-height: 26px
+            margin-top: 25px
+            margin-bottom: 20px
+        &__item
+            font-size: 14px
+            line-height: 18px
+            width: 227px
+            &_bold
+                font-size: 14px
+                line-height: 24px
+                text-align: end
+                width: 126px
+                letter-spacing: 0
+        &__special
+            display: none
+
+    .partners
+        padding-left: 16px
+        padding-right: 16px
+        &__title
+            font-size: 24px
+            line-height: 36px
+        &__text
+            font-size: 14px
+            line-height: 18px
+    .bank
+        grid-template-columns: 1fr 1fr
+        grid-gap: 25px
+        &__img
+            width: 150px
     .footer
         grid-template-columns: 1fr
         padding: 30px 21px 30px 16px
