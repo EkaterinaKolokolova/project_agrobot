@@ -79,6 +79,8 @@ body
     margin: 0 auto
     padding: 25px 50px 0
     max-width: 1340px
+    &__little-img
+        display: none
     &__logo
         display: flex
         justify-content: start
@@ -150,6 +152,10 @@ body
         right: 49px
         height: 44px
         width: 180px
+    &__burger-title
+        display: none
+    &__burger
+        display: none
 .button-subscribe
     border: none
     color: #FFFFFF
@@ -333,12 +339,13 @@ input:focus:required:valid
         position: relative
         bottom: 31px
         left: 51px
+    &__tiny-icon
+        display: none
     &__container
         display: grid
-        grid-template-columns: 506px 1fr
+        grid-template: 1fr 1fr / 506px 1fr
         max-width: 1340px
         margin: 0 50px
-        gap: 50px
     &__forms
         display: flex
         flex-direction: column
@@ -348,7 +355,7 @@ input:focus:required:valid
             background: #F2F2F2
             border-radius: 34px
             border: none
-            padding: 20px 46px
+            padding: 20px 30px
             font-weight: 400
             font-size: 24px
             &:focus
@@ -381,7 +388,7 @@ input:focus:required:valid
         font-weight: 800
         line-height: 18px
         text-transform: uppercase
-        margin: 18px 0 130px 48px
+        margin: 21px 0 130px 0
     &__point
         padding: 137px 0 56px
     &__map
@@ -393,6 +400,7 @@ input:focus:required:valid
         border-radius: 34px
         background-image: url(../assets/img/map.svg)
         background-repeat: no-repeat
+        margin-left: 50px
 .cart
     display: grid
     grid-template-columns: 230px 130px
@@ -421,6 +429,8 @@ input:focus:required:valid
         max-width: 175px
     &__icon
         margin-right: 10px
+    &__tiny-icon
+        display: none
 /* Footer */
 .footer
     position: relative
