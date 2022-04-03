@@ -150,7 +150,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 16px;
+    padding-left: 17px;
     padding-right: 20px;
   }
   .agrobot__btn {
@@ -163,10 +163,14 @@
   .banner__title {
     font-size: 70px;
     line-height: 82px;
+    margin-top: 36px;
+    margin-bottom: 9px;
+    margin-left: -1px;
   }
   .banner__description {
     font-size: 14px;
     line-height: 16px;
+    margin-top: 10px;
   }
   .banner__text {
     font-size: 14px;
@@ -528,6 +532,9 @@
     -ms-grid-column-span: 1;
     grid-area: 4/1/5/2;
     max-width: 255px;
+  }
+  .bot {
+    display: none;
   }
 }
 /*# sourceMappingURL=media.css.map */
