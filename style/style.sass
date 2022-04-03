@@ -24,7 +24,7 @@
     src: url(../assets/font/SFPRODISPLAYBLACK.OTF)
     font-weight: 900
 body
-    font-family: 'SF Pro Display', sans-serif
+    font-family: 'SF Pro Display', Helvetica, Arial, sans-serif
 .title
     position: relative
     font-weight: 900
@@ -46,7 +46,7 @@ body
     display: flex
     justify-content: center
     align-items: center
-    background: linear-gradient(94.77deg, #48B760 0%, #6BB748 100%)
+    background: repeating-linear-gradient(-75deg, rgba(0, 0, 0, 0.08) 0, 1.5px, transparent 1px 7px), linear-gradient(94.77deg, #48B760 0%, #6BB748 100%)
     border-radius: 500px
     font-weight: 800
     font-size: 14px
@@ -55,13 +55,6 @@ body
     color: #FFFFFF
     border-style: none
     padding: 15px 34px
-    &__stripes
-        background-image: url(../assets/img/btn_stripes.svg)
-        mix-blend-mode: overlay
-        opacity: 1
-        position: absolute
-        width: 100%
-        height: 100%
     &_shadow
         box-shadow: 0px 20px 20px rgba(115, 205, 0, 0.3)
     &:hover
@@ -159,14 +152,15 @@ body
 .agrobot
     display: flex
     position: relative
-    padding: 83px 50px 70px 50px
+    padding: 32px 50px 0px 50px
     &__btn
         padding: 15px 25px
         margin-left: 0px
         position: absolute
         left: 50px
-        bottom: 344px
+        bottom: 293px
 .banner
+    flex: 50%
     &__title
         font-family: 'Roboto'
         font-style: normal
@@ -174,6 +168,8 @@ body
         font-size: 135px
         line-height: 144px
         color: #4F4F4F
+        margin-top: 143px
+        margin-bottom: 0
         &_green
             color: #48B760
     &__description
@@ -182,12 +178,14 @@ body
         font-size: 18px
         line-height: 18px
         color: #BDBDBD
+        margin-top: 0px
     &__text
         font-style: normal
         font-weight: 400
         font-size: 14px
         line-height: 18px
         color: #828282
+        max-width: 300px
     &__img
         display: flex
         justify-content: flex-end
@@ -253,7 +251,7 @@ body
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1)
     border-radius: 20px
     text-align: center
-    padding: 40px 44px
+    padding: 2.5em 0.5em
     &__icon
         width: 124px
         height: 124px
@@ -365,10 +363,6 @@ body
     align-items: center
     width: 422px
     &__number
-        position: relative
-        display: flex
-        align-items: center
-        justify-content: center
         font-weight: 900
         font-size: 144px
         line-height: 110px
@@ -378,7 +372,6 @@ body
         -webkit-text-fill-color: transparent
         background-clip: text
         text-fill-color: transparent
-        text-transform: uppercase
     &__info
         max-width: 320px
     &__title
@@ -488,7 +481,7 @@ body
 
 /* Наши партнеры */     
 .partners
-    padding: 20px 52px 70px 90px
+    padding: 20px 52px 80px 50px
     &__title
         font-family: 'SF Pro Display'
         font-style: normal
@@ -496,8 +489,10 @@ body
         font-size: 96px
         line-height: 110px
         color: #4F4F4F
+        margin-left: 35px
+        margin-bottom: 64px
     &__icon
-        left: -45px
+        left: -38px
     &__text
         font-family: 'SF Pro Display'
         font-style: normal
@@ -505,18 +500,19 @@ body
         font-size: 18px
         line-height: 26px
         color: #828282
+        margin-bottom: 40px
     &__btn
         padding: 15px 25px
 .bank
     display: grid
-    grid-template-columns: repeat(4, 1fr)
-    grid-template-rows: repeat(2, 1fr)
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr))
     grid-gap: 50px
+    justify-items: center
     text-align: center
     &__btn
         display: flex
         justify-content: center
-        padding-top: 50px
+        padding-top: 76px
 /*Обратная связь*/
 textarea
     resize: none
