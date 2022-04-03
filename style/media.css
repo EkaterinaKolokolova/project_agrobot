@@ -481,6 +481,11 @@
   .partners__title {
     font-size: 24px;
     line-height: 36px;
+    margin-top: 2px;
+    margin-left: 23px;
+  }
+  .partners__icon {
+    left: -24px;
   }
   .partners__text {
     font-size: 14px;
