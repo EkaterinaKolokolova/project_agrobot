@@ -41,9 +41,9 @@
         user-select: none
         input:checked ~ ul
             transform: none
-            visibility: visible
+            display: inline-block
         input ~ ul
-            visibility: hidden
+            display: none
         a:hover
             color: #48B760
         input
@@ -97,18 +97,18 @@
         display: flex
         align-items: center
     .agrobot
-        display: flex
         flex-wrap: wrap
         justify-content: flex-start
         align-items: center
         padding-left: 17px
         padding-right: 20px
+        padding-bottom: 147px
         &__btn
             padding: 15px 25px
             margin-left: 0px
             position: absolute
-            left: 70px
-            bottom: 0px
+            left: 78px
+            bottom: 58px
     .banner
         &__title
             font-size: 70px
@@ -120,24 +120,28 @@
             font-size: 14px
             line-height: 16px
             margin-top: 10px
+            margin-bottom: 19px
         &__text
             font-size: 14px
             line-height: 18px
+            margin-bottom: 42px
         &__img-block
             display: inline-flex
             padding-top: 20px
             padding-left: -45px
             padding-top: 0px
+        &__img-text
+            margin: 11px 0px
         &__img
-            display: flex
-            flex-flow: column-reverse
+            flex-direction: column
             justify-content: flex-start
             align-items: flex-start
             &_big
                 display: none
             &_small
                 padding-left: 0px
-                padding-right: 16px
+                padding-right: 14px
+                width: 24px
     .goods
         padding: 16px 16px 45px 16px
         &__background

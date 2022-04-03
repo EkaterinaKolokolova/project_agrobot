@@ -65,10 +65,10 @@
   #menuToggle input:checked ~ ul {
     -webkit-transform: none;
             transform: none;
-    visibility: visible;
+    display: inline-block;
   }
   #menuToggle input ~ ul {
-    visibility: hidden;
+    display: none;
   }
   #menuToggle a:hover {
     color: #48B760;
@@ -144,9 +144,6 @@
             align-items: center;
   }
   .agrobot {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: start;
@@ -157,13 +154,14 @@
             align-items: center;
     padding-left: 17px;
     padding-right: 20px;
+    padding-bottom: 147px;
   }
   .agrobot__btn {
     padding: 15px 25px;
     margin-left: 0px;
     position: absolute;
-    left: 70px;
-    bottom: 0px;
+    left: 78px;
+    bottom: 58px;
   }
   .banner__title {
     font-size: 70px;
@@ -176,10 +174,12 @@
     font-size: 14px;
     line-height: 16px;
     margin-top: 10px;
+    margin-bottom: 19px;
   }
   .banner__text {
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 42px;
   }
   .banner__img-block {
     display: -webkit-inline-box;
@@ -189,14 +189,14 @@
     padding-left: -45px;
     padding-top: 0px;
   }
+  .banner__img-text {
+    margin: 11px 0px;
+  }
   .banner__img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: column-reverse;
-            flex-flow: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -209,7 +209,8 @@
   }
   .banner__img_small {
     padding-left: 0px;
-    padding-right: 16px;
+    padding-right: 14px;
+    width: 24px;
   }
   .goods {
     padding: 16px 16px 45px 16px;
