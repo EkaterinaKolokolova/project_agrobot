@@ -28,7 +28,7 @@ body
 .title
     position: relative
     font-weight: 900
-    font-size: 96px
+    font-size: 6.7vw
     line-height: 110px
     text-transform: uppercase
     color: #4F4F4F
@@ -131,7 +131,7 @@ body
         padding: 29px 38px 11px 38px
     &__btnphone
         font-size: 14px
-        font-weight: 600, Semi Bold
+        font-weight: 600
         line-height: 18px
         padding: 13px 21px
         position: absolute
@@ -150,24 +150,20 @@ body
 /* AGROBOT */
 .agrobot
     display: flex
-    position: relative
     padding: 32px 50px 0px 50px
     &__btn
         padding: 15px 25px
         margin-left: 0px
-        position: absolute
-        left: 50px
-        bottom: 293px
 .banner
     flex: 50%
     &__title
         font-family: 'Roboto'
         font-style: normal
         font-weight: 900
-        font-size: 135px
+        font-size: 9.4vw
         line-height: 144px
         color: #4F4F4F
-        margin-top: 143px
+        margin-top: 21%
         margin-bottom: 0
         &_green
             color: #48B760
@@ -185,13 +181,14 @@ body
         line-height: 18px
         color: #828282
         max-width: 300px
+        margin-bottom: 30px
     &__img
         display: flex
         justify-content: flex-end
         align-items: flex-end
+        max-width: 100%
         &_small
-            align-items: center
-            padding-left: 100px
+            display: inline-block
     &__img-block
         text-align: center
 /* Товары и услуги */
@@ -349,18 +346,17 @@ body
 .work-process
     display: grid
     grid-auto-flow: column
-    grid-template-columns: repeat(2, 422px)
+    grid-template-columns: repeat(auto-fit, minmax(422px))
     grid-template-rows: repeat(3, 1fr)
-    justify-content: center
+    justify-content: space-evenly
     justify-items: start
     grid-gap: 48px
-    column-gap: 234px
     margin-bottom: 69px
 .work-stage
     display: flex
     justify-content: space-between
     align-items: center
-    width: 422px
+    max-width: 422px
     &__number
         font-weight: 900
         font-size: 144px
@@ -370,9 +366,9 @@ body
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
         background-clip: text
-        text-fill-color: transparent
     &__info
         max-width: 320px
+        margin-left: 10px
     &__title
         font-weight: 700
         font-size: 24px
@@ -407,7 +403,7 @@ body
         line-height: 18px
         color: #4F4F4F
         max-width: 290px
-        top: 176px
+        top: 65%
         left: 75px
     &__banner
         background-image: url(../assets/img/credit_main.jpg)
@@ -429,16 +425,13 @@ body
             -webkit-background-clip: text
             -webkit-text-fill-color: transparent
             background-clip: text
-            text-fill-color: transparent
     &__btn
         margin: 0 auto
         padding: 15px 32px
 .bank-icon
-    background-image: url(../assets/img/bank.svg)
-    background-size: cover
-    width: 262px
-    height: 86px
     margin-left: 61px
+    &__img
+        max-width: 100%
 .leasing
     &__title
         font-weight: 700
@@ -482,12 +475,6 @@ body
 .partners
     padding: 20px 52px 80px 50px
     &__title
-        font-family: 'SF Pro Display'
-        font-style: normal
-        font-weight: 900
-        font-size: 96px
-        line-height: 110px
-        color: #4F4F4F
         margin-left: 35px
         margin-bottom: 64px
     &__icon

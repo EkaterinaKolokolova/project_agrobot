@@ -144,6 +144,7 @@
             align-items: center;
   }
   .agrobot {
+    position: relative;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: start;
@@ -483,6 +484,7 @@
     line-height: 36px;
     margin-top: 2px;
     margin-left: 23px;
+    margin-bottom: 33px;
   }
   .partners__icon {
     left: -24px;
@@ -491,10 +493,16 @@
     font-size: 14px;
     line-height: 18px;
   }
+  .partners__text_extra {
+    display: none;
+  }
   .bank {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
+  }
+  .bank__btn {
+    padding-top: 50px;
   }
   .bank__img {
     width: 150px;

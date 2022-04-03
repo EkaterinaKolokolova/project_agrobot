@@ -97,6 +97,7 @@
         display: flex
         align-items: center
     .agrobot
+        position: relative
         flex-wrap: wrap
         justify-content: flex-start
         align-items: center
@@ -320,14 +321,19 @@
             line-height: 36px
             margin-top: 2px
             margin-left: 23px
+            margin-bottom: 33px
         &__icon
             left: -24px
         &__text
             font-size: 14px
             line-height: 18px
+            &_extra
+                display: none
     .bank
         grid-template-columns: 1fr 1fr
         grid-gap: 25px
+        &__btn
+            padding-top: 50px
         &__img
             width: 150px
     .footer

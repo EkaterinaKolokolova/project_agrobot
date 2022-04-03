@@ -42,7 +42,7 @@ body {
 .title {
   position: relative;
   font-weight: 900;
-  font-size: 96px;
+  font-size: 6.7vw;
   line-height: 110px;
   text-transform: uppercase;
   color: #4F4F4F;
@@ -207,7 +207,7 @@ body {
 
 .header__btnphone {
   font-size: 14px;
-  font-weight: 600, Semi Bold;
+  font-weight: 600;
   line-height: 18px;
   padding: 13px 21px;
   position: absolute;
@@ -234,16 +234,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   padding: 32px 50px 0px 50px;
 }
 
 .agrobot__btn {
   padding: 15px 25px;
   margin-left: 0px;
-  position: absolute;
-  left: 50px;
-  bottom: 293px;
 }
 
 .banner {
@@ -256,10 +252,10 @@ body {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  font-size: 135px;
+  font-size: 9.4vw;
   line-height: 144px;
   color: #4F4F4F;
-  margin-top: 143px;
+  margin-top: 21%;
   margin-bottom: 0;
 }
 
@@ -283,6 +279,7 @@ body {
   line-height: 18px;
   color: #828282;
   max-width: 300px;
+  margin-bottom: 30px;
 }
 
 .banner__img {
@@ -295,13 +292,11 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  max-width: 100%;
 }
 
 .banner__img_small {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 100px;
+  display: inline-block;
 }
 
 .banner__img-block {
@@ -538,17 +533,15 @@ body {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
-  -ms-grid-columns: (422px)[2];
-      grid-template-columns: repeat(2, 422px);
+  -ms-grid-columns: (minmax(422px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(422px));
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   justify-items: start;
   grid-gap: 48px;
-  -webkit-column-gap: 234px;
-          column-gap: 234px;
   margin-bottom: 69px;
 }
 
@@ -562,7 +555,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 422px;
+  max-width: 422px;
 }
 
 .work-stage__number {
@@ -574,11 +567,11 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .work-stage__info {
   max-width: 320px;
+  margin-left: 10px;
 }
 
 .work-stage__title {
@@ -630,7 +623,7 @@ body {
   line-height: 18px;
   color: #4F4F4F;
   max-width: 290px;
-  top: 176px;
+  top: 65%;
   left: 75px;
 }
 
@@ -658,7 +651,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .credit__btn {
@@ -667,11 +659,11 @@ body {
 }
 
 .bank-icon {
-  background-image: url(../assets/img/bank.svg);
-  background-size: cover;
-  width: 262px;
-  height: 86px;
   margin-left: 61px;
+}
+
+.bank-icon__img {
+  max-width: 100%;
 }
 
 .leasing__title {
@@ -745,12 +737,6 @@ body {
 }
 
 .partners__title {
-  font-family: 'SF Pro Display';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 96px;
-  line-height: 110px;
-  color: #4F4F4F;
   margin-left: 35px;
   margin-bottom: 64px;
 }
