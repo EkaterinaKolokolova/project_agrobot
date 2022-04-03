@@ -101,7 +101,6 @@ body {
           align-items: center;
   margin: 0 auto;
   padding: 0 50px 0;
-  width: 100%;
 }
 
 .header__little-img {
@@ -820,7 +819,7 @@ input:focus:required:valid {
 .contact {
   background-image: url(../assets/img/background3.svg), url(../assets/img/background32.svg);
   background-repeat: no-repeat, no-repeat;
-  background-size: 100%;
+  background-size: auto, cover;
   margin: 0 auto;
 }
 
@@ -845,9 +844,9 @@ input:focus:required:valid {
 .contact__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-rows: 1fr 198px;
   -ms-grid-columns: 506px 1fr;
-      grid-template: 1fr 1fr / 506px 1fr;
+      grid-template: 1fr 198px / 506px 1fr;
   max-width: 1340px;
   margin: 0 50px;
 }

@@ -22,7 +22,7 @@
             display: none
     .burger
         display: grid
-        grid-template-columns: 75px 1fr
+        grid-template-columns: 75px 0px
         &__box
             display: grid
             grid-template: 9px 9px / 9px 9px
@@ -41,6 +41,9 @@
         user-select: none
         input:checked ~ ul
             transform: none
+            visibility: visible
+        input ~ ul
+            visibility: hidden
         a:hover
             color: #48B760
         input
@@ -51,6 +54,7 @@
             top: -7px
             left: -5px
             cursor: pointer
+            overflow: hidden
             opacity: 0
             z-index: 2
             -webkit-touch-callout: none
@@ -75,10 +79,10 @@
         position: absolute
         right: 0
         width: 250px
-        padding: 40px
+        padding: 20px 10px 30px 30px
         -webkit-font-smoothing: antialiased
         transform-origin: 0% 0%
-        transform: translate(350px, 0)
+        transform: translate(370px, 0)
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
         li
             padding: 10px 0

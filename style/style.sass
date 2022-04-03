@@ -66,7 +66,6 @@ body
     align-items: center
     margin: 0 auto
     padding: 0 50px 0
-    width: 100%
     &__little-img
         display: none
     &__logo
@@ -529,7 +528,7 @@ input:focus:required:valid
 .contact
     background-image: url(../assets/img/background3.svg), url(../assets/img/background32.svg)
     background-repeat: no-repeat, no-repeat
-    background-size: 100%
+    background-size: auto, cover
     margin: 0 auto
     &__title
         font-weight: 900
@@ -545,7 +544,7 @@ input:focus:required:valid
         display: none
     &__container
         display: grid
-        grid-template: 1fr 1fr / 506px 1fr
+        grid-template: 1fr 198px / 506px 1fr
         max-width: 1340px
         margin: 0 50px
     &__forms
